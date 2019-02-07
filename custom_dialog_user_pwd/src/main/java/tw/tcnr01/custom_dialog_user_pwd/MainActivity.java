@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void openDialog() {
-
+        ExampleDialog exampleDialog = new ExampleDialog();
+        exampleDialog.show(getSupportFragmentManager(),"example dialog");
     }
 }
