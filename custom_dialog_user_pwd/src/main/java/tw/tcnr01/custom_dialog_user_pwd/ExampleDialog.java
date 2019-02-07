@@ -43,4 +43,9 @@ public class ExampleDialog extends AppCompatDialogFragment {
         //回傳做好的dialog
         return builder.create();
     }
+
+    //自定義一個interface
+    public interface ExampleDialogListener{
+        void applyTexts(String username,String password);
+    }
 }
