@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    //將從dialog那接收到的值做處理
     public void applyTexts(String username, String password) {
-
+            textViewUsername.setText(username);
+            textViewPassword.setText(password);
     }
 }

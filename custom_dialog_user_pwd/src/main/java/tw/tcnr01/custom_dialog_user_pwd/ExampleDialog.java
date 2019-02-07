@@ -38,6 +38,8 @@ public class ExampleDialog extends AppCompatDialogFragment {
                             String username = editTextUsername.getText().toString();
                             String password = editTextPassword.getText().toString();
 
+                            //將edittext的值傳到Main(Activity)
+                            listener.applyTexts(username,password);
                     }
                 });
 
