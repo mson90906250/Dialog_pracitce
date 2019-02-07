@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener , ExampleDialog.ExampleDialogListener {
 
     private TextView textViewUsername;
     private TextView textViewPassword;
@@ -37,5 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void openDialog() {
         ExampleDialog exampleDialog = new ExampleDialog();
         exampleDialog.show(getSupportFragmentManager(),"example dialog");
+    }
+
+    @Override
+    public void applyTexts(String username, String password) {
+
     }
 }
