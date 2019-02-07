@@ -26,12 +26,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button = (Button) findViewById(R.id.button);
 
         button.setOnClickListener(this);
-
-
     }
 
     @Override
     public void onClick(View v) {
+        //開啓dialog
+        openDialog();
+    }
+
+    private void openDialog() {
 
     }
 }
